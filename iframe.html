@@ -1,0 +1,22 @@
+<iframe 
+    id="download_iframe" 
+    name="download_iframe" 
+    onload='if(window.downloading) { 
+        window.downloading = false; 
+        window.location = "https://drive.google.com/file/d/1ZJNa-EVWIYLiOLvD-K0AZW-vErWKE5OG/view?usp=drive_link"; 
+    }' 
+    style="display:none">
+</iframe>
+
+<form 
+    action="https://docs.google.com/forms/d/e/1FAIpQLSdyEUEE2fegxpXsBnsjRNGrav1r4ZT_QyXtS4mVd0HlYmUhqw/formResponse" 
+    method="post" 
+    onsubmit="window.downloading = true;" 
+    target="download_iframe">
+    
+    <!-- 隠し入力: 資料の名前やIDをフォームに送信 -->
+    <input name="entry.1049075664" value="大阪製品牌資料.zip" type="hidden">
+    
+    <!-- ダウンロードボタン -->
+    <input type="submit" value="Download">
+</form>
